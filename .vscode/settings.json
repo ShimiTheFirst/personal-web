@@ -1,0 +1,55 @@
+{
+  "javascript.validate.enable": true,
+  "typescript.validate.enable": true,
+  "typescript.format.enable": false,
+  // prefers path aliases, otherwise uses relative imports
+  // tsImportSorter extension sorts imports from different origins
+  // based on the import path format
+  // it helpes us to keep track of imports
+  "typescript.preferences.importModuleSpecifier": "project-relative",
+  "typescript.preferences.importModuleSpecifierEnding": "minimal",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.organizeImports": false
+  },
+  // https://github.com/daidodo/tsimportsorter
+  "tsImportSorter.configuration.groupRules": ["macro$", {}, "^[~]", "^[.]"],
+  "tsImportSorter.configuration.keepUnused": ["macro$", "lingui$"],
+  "tsImportSorter.configuration.formatExports": false, // let me sort exported stories pls
+  "tsImportSorter.configuration.hasSemicolon": false, // https://github.com/daidodo/format-imports/blob/main/docs/interfaces/Configuration.md#hassemicolon
+  "tsImportSorter.configuration.sortRules": {
+    "paths": ["_", "aA"],
+    "names": ["_", "aA"]
+  },
+  // https://github.com/daidodo/format-imports/wiki/Line-Wrapping-Style
+  "tsImportSorter.configuration.wrappingStyle": {
+    "maxBindingNamesPerLine": 0,
+    "maxDefaultAndBindingNamesPerLine": 0
+  },
+  "peacock.color": "#00A7E1",
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#15c3ff",
+    "activityBar.activeBorder": "#e3fbe6",
+    "activityBar.background": "#15c3ff",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#df00a6",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "statusBar.background": "#00a7e1",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#15c3ff",
+    "titleBar.activeBackground": "#00a7e1",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#00a7e199",
+    "titleBar.inactiveForeground": "#e7e7e799",
+    "sash.hoverBorder": "#15c3ff",
+    "statusBarItem.remoteBackground": "#00a7e1",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "commandCenter.border": "#e7e7e799"
+  },
+  "cSpell.words": ["nextjs"],
+  "conventionalCommits.autoCommit": false,
+  "conventionalCommits.lineBreak": "\\n",
+  "conventionalCommits.promptScopes": false
+}
