@@ -14,7 +14,7 @@
     "source.organizeImports": false
   },
   // https://github.com/daidodo/tsimportsorter
-  "tsImportSorter.configuration.groupRules": ["macro$", {}, "^[~]", "^[.]"],
+  "tsImportSorter.configuration.groupRules": ["macro$", {}, "^[-]", "^[.]"],
   "tsImportSorter.configuration.keepUnused": ["macro$", "lingui$"],
   "tsImportSorter.configuration.formatExports": false, // let me sort exported stories pls
   "tsImportSorter.configuration.hasSemicolon": false, // https://github.com/daidodo/format-imports/blob/main/docs/interfaces/Configuration.md#hassemicolon
