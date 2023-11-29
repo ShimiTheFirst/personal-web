@@ -1,6 +1,7 @@
 /// <reference types="../global-types.ts" />
 
-import './globals.css'
+import '../global/styles/normalize.css'
+import '../global/styles/global-styles.css'
 
 import type { Metadata } from 'next'
 
