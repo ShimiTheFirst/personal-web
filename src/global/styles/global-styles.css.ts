@@ -11,7 +11,7 @@ globalStyle('body', {
 })
 
 // https://tailwindcss.com/docs/font-smoothing
-globalStyle('h1, h2, h3, h4, h5, h6, p, span', {
+globalStyle('h1, h2, h3, h4, h5, h6, p, span, a', {
   WebkitFontSmoothing: 'antialiased',
   MozOsxFontSmoothing: 'grayscale',
 })
@@ -19,4 +19,10 @@ globalStyle('h1, h2, h3, h4, h5, h6, p, span', {
 globalStyle('a', {
   color: 'inherit',
   textDecoration: 'none',
+})
+
+// https://web.dev/articles/optimize-cls#modern_best_practice_for_setting_image_dimensions
+globalStyle('img', {
+  width: '100%',
+  height: 'auto',
 })

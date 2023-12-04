@@ -17,6 +17,8 @@
     "paths": {
       "-designSystem": ["./src/designSystem/index.ts"],
       "-libs/*": ["./src/libs/*"],
+      "-routing": ["./src/routing/index.ts"],
+      "-styles/*": ["./src/styles/*"],
       "-ui/*": ["./src/ui/*"]
     }
   },
