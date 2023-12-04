@@ -1,11 +1,14 @@
 import { getSpaceValue, getTypographyProperties } from '-designSystem'
 import { style } from '-libs/vanilla-extract'
 
+const COLUMN_BREAKPOINT = `800px`
+
 const displayTypography = getTypographyProperties(`display1`)
 const displaySubTypography = getTypographyProperties(`display1Sub`)
 const bodyTypography = getTypographyProperties(`buttonLg`)
 
-const UNKNOWN_PROPERTIES = {
+// new CSS properties that are not supported by vanilla-extract
+const UNSUPPORTED_PROPERTIES = {
   textWrap: `balance`,
 }
 
@@ -14,13 +17,16 @@ export const HOME_PAGE_STYLES = {
     display: `grid`,
     gap: getSpaceValue(`s32`),
     alignItems: `center`,
-    marginTop: `10vh`,
     width: `100%`,
     gridTemplateColumns: `1fr auto`,
 
+    position: `relative`,
+    top: `-15vh`, // TODO solve this in a better way
+
     '@media': {
-      [`(max-width: 800px)`]: {
+      [`(max-width: ${COLUMN_BREAKPOINT})`]: {
         gridTemplateColumns: `1fr`,
+        top: 0,
       },
     },
   }),
@@ -30,7 +36,7 @@ export const HOME_PAGE_STYLES = {
     marginBottom: getSpaceValue(`s12`),
 
     '@media': {
-      [`(max-width: 800px)`]: {
+      [`(max-width: ${COLUMN_BREAKPOINT})`]: {
         fontSize: displayTypography.fontSizeMobile,
       },
     },
@@ -42,18 +48,18 @@ export const HOME_PAGE_STYLES = {
     marginBottom: getSpaceValue(`s36`),
 
     '@media': {
-      [`(max-width: 800px)`]: {
+      [`(max-width: ${COLUMN_BREAKPOINT})`]: {
         fontSize: displaySubTypography.fontSizeMobile,
       },
     },
   }),
   body: style({
     ...bodyTypography,
-    ...UNKNOWN_PROPERTIES,
     margin: `0px`,
+    ...UNSUPPORTED_PROPERTIES,
 
     '@media': {
-      [`(max-width: 800px)`]: {
+      [`(max-width: ${COLUMN_BREAKPOINT})`]: {
         fontSize: bodyTypography.fontSizeMobile,
       },
     },

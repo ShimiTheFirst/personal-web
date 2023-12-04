@@ -6,6 +6,7 @@ export const SCREEN_STYLES = {
   content: style({
     '@layer': {
       [LAYERS.base]: {
+        flexGrow: 1,
         margin: `0 auto`,
         maxWidth: MAX_CONTENT_WIDTH,
         padding: `0 ${getSpaceValue(`s32`)}`,
