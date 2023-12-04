@@ -1,7 +1,7 @@
 import { getSpaceValue, getTypographyProperties } from '-designSystem'
 import { style } from '-libs/vanilla-extract'
 
-const COLUMN_BREAKPOINT = `800px`
+const COLUMN_BREAKPOINT = `900px`
 
 const displayTypography = getTypographyProperties(`display1`)
 const displaySubTypography = getTypographyProperties(`display1Sub`)
@@ -17,16 +17,11 @@ export const HOME_PAGE_STYLES = {
     display: `grid`,
     gap: getSpaceValue(`s32`),
     alignItems: `center`,
-    width: `100%`,
     gridTemplateColumns: `1fr auto`,
-
-    position: `relative`,
-    top: `-15vh`, // TODO solve this in a better way
 
     '@media': {
       [`(max-width: ${COLUMN_BREAKPOINT})`]: {
         gridTemplateColumns: `1fr`,
-        top: 0,
       },
     },
   }),
