@@ -5,7 +5,7 @@ import { Link } from 'react-aria-components'
 
 import { ROUTES } from '-routing'
 
-import { NAVIGATION_STYLES } from './Navigation.css'
+import { BUTTON_STYLES } from './Button.css'
 
 type TLinkProps = OmitSafe<PropsOf<typeof Link>, 'className' | 'href'>
 
@@ -22,14 +22,14 @@ type TRouteProps =
 type TProps = RequiredChildren & TRouteProps & TLinkProps
 
 /**
- * Link component navigating the user to a specific route on click.
+ * Link component styled as a Button, used to navigate a user to a specific route on click.
  * Supports both internal and external links.
  */
-export const NavItem: React.FC<TProps> = ({ children, to, href, ...linkProps }) => {
+export const ButtonLink: React.FC<TProps> = ({ children, to, href, ...linkProps }) => {
   const url = to ? ROUTES[to].path : href
 
   return (
-    <Link {...linkProps} href={url} className={NAVIGATION_STYLES.item}>
+    <Link {...linkProps} href={url} className={BUTTON_STYLES.button}>
       {children}
     </Link>
   )

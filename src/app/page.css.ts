@@ -1,7 +1,8 @@
-import { getSpaceValue, getTypographyProperties } from '-designSystem'
+import { getDropShadowValue, getSpaceValue, getTypographyProperties } from '-designSystem'
 import { style } from '-libs/vanilla-extract'
 
 const COLUMN_BREAKPOINT = `900px`
+const ICON_SIZE = `20px`
 
 const displayTypography = getTypographyProperties(`display1`)
 const displaySubTypography = getTypographyProperties(`display1Sub`)
@@ -25,6 +26,7 @@ export const HOME_PAGE_STYLES = {
       },
     },
   }),
+
   display: style({
     ...displayTypography,
     margin: `0px`,
@@ -36,6 +38,7 @@ export const HOME_PAGE_STYLES = {
       },
     },
   }),
+
   subDisplay: style({
     ...displaySubTypography,
     margin: `0px`,
@@ -48,9 +51,11 @@ export const HOME_PAGE_STYLES = {
       },
     },
   }),
+
   body: style({
     ...bodyTypography,
     margin: `0px`,
+    marginBottom: getSpaceValue(`s36`),
     ...UNSUPPORTED_PROPERTIES,
 
     '@media': {
@@ -58,5 +63,16 @@ export const HOME_PAGE_STYLES = {
         fontSize: bodyTypography.fontSizeMobile,
       },
     },
+  }),
+
+  buttonContainer: style({
+    display: `flex`,
+    gap: getSpaceValue(`s12`),
+  }),
+
+  icon: style({
+    width: ICON_SIZE,
+    height: ICON_SIZE,
+    filter: `drop-shadow(${getDropShadowValue(`sharp`)})`,
   }),
 }

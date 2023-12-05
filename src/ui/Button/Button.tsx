@@ -1,9 +1,12 @@
-import * as React from 'react'
+'use client'
 
-import { button } from './Button.css'
+import * as React from 'react'
+import { Button as RAButton } from 'react-aria-components'
+
+import { BUTTON_STYLES } from './Button.css'
 
 type TProps = RequiredChildren
 
 export const Button: React.FC<TProps> = ({ children }) => {
-  return <button className={button}>{children}</button>
+  return <RAButton className={BUTTON_STYLES.button}>{children}</RAButton>
 }
