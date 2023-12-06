@@ -6,7 +6,7 @@ const ICON_SIZE = `20px`
 
 const displayTypography = getTypographyProperties(`display1`)
 const displaySubTypography = getTypographyProperties(`display1Sub`)
-const bodyTypography = getTypographyProperties(`buttonLg`)
+const bodyTypography = getTypographyProperties(`textLg`)
 
 // new CSS properties that are not supported by vanilla-extract
 const UNSUPPORTED_PROPERTIES = {

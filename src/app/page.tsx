@@ -18,9 +18,8 @@ const Home: React.FC = () => {
           <h2 className={HOME_PAGE_STYLES.subDisplay}>Frontend developer</h2>
 
           <p className={HOME_PAGE_STYLES.body}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a dui ut lacus malesuada
-            lacinia ut a lacus. Nunc vitae condimentum nunc. Cras ultrices lacinia lorem, ac
-            suscipit ex tristique quis.
+            Hi, I’m an enthusiastic frontend developer from Czech Republic, who enjoys creating
+            meaningful things that make someones life a bit better – starting with people around me.
           </p>
 
           <div className={HOME_PAGE_STYLES.buttonContainer}>
