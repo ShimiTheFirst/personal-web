@@ -1,4 +1,9 @@
-import { getDurationValue, getSpaceValue, getTypographyProperties } from '-designSystem'
+import {
+  getDurationValue,
+  getRadiusValue,
+  getSpaceValue,
+  getTypographyProperties,
+} from '-designSystem'
 import { style } from '-libs/vanilla-extract'
 import { LAYERS } from '-styles/layers.css'
 
@@ -14,7 +19,32 @@ const NAV_ITEM_BASE_STYLES = style({
 
       // outline related styles
       transition: `all ${getDurationValue(`superFast`)}`,
-      borderRadius: `2px`,
+      borderRadius: getRadiusValue(`r2`),
+      position: `relative`,
+
+      '::after': {
+        content: ``,
+        background: `#08B2E3`,
+
+        position: `absolute`,
+        left: 0,
+        width: `100%`,
+
+        bottom: getSpaceValue(`s4`),
+        height: `2px`,
+
+        transition: `all ${getDurationValue(`fast`)}`,
+        borderRadius: getRadiusValue(`pill`),
+
+        // hidden until hover
+        transform: `scaleX(0)`,
+      },
+
+      selectors: {
+        '&[data-hovered=true]::after': {
+          transform: `scaleX(1)`,
+        },
+      },
 
       '@media': {
         [`(max-width: 600px)`]: {
@@ -37,4 +67,8 @@ export const NAVIGATION_STYLES = {
   }),
 
   item: style([OUTLINE_STYLES, NAV_ITEM_BASE_STYLES]),
+
+  activeItem: style({
+    color: `#08B2E3`,
+  }),
 }

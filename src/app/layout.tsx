@@ -29,10 +29,14 @@ const RootLayout: React.FC<TProps> = ({ children }) => {
           <Header>
             <Navigation className={ROOT_LAYOUT_STYLES.nav}>
               <NavItem to={`home`}>HOME</NavItem>
+              <NavItem to={`cv`}>OPINIONS</NavItem>
+              <NavItem to={`cv`}>INSPIRATION</NavItem>
               <NavItem to={`cv`}>CV</NavItem>
             </Navigation>
           </Header>
+
           {children}
+
           <Footer />
         </RouterProvider>
       </body>

@@ -1,8 +1,10 @@
 'use client'
 
+import { usePathname } from 'next/navigation'
 import * as React from 'react'
 import { Link } from 'react-aria-components'
 
+import { cn } from '-libs/cn'
 import { ROUTES } from '-routing'
 
 import { NAVIGATION_STYLES } from './Navigation.css'
@@ -26,10 +28,17 @@ type TProps = RequiredChildren & TRouteProps & TLinkProps
  * Supports both internal and external links.
  */
 export const NavItem: React.FC<TProps> = ({ children, to, href, ...linkProps }) => {
+  const pathname = usePathname()
+
   const url = to ? ROUTES[to].path : href
+  const isCurrentPage = pathname === url
 
   return (
-    <Link {...linkProps} href={url} className={NAVIGATION_STYLES.item}>
+    <Link
+      {...linkProps}
+      href={url}
+      className={cn(NAVIGATION_STYLES.item, { [NAVIGATION_STYLES.activeItem]: isCurrentPage })}
+    >
       {children}
     </Link>
   )

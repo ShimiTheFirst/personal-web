@@ -7,6 +7,8 @@ import { layer } from '-libs/vanilla-extract'
 // as the parent component stayed mounted.
 // This was happening eg. on route change via top navigation.
 
+// The `defaults` layer should contain global styles.
+
 // The `base` layer should be used for component’s own styles
 // if that component supports override (className prop).
 
@@ -15,5 +17,6 @@ import { layer } from '-libs/vanilla-extract'
 
 const override = layer('override')
 const base = layer({ parent: override }, 'base')
+const defaults = layer({ parent: base }, 'defaults')
 
-export const LAYERS = { base, override } as const
+export const LAYERS = { base, override, defaults } as const
