@@ -9,18 +9,18 @@ import { LAYERS } from '-styles/layers.css'
 
 import { OUTLINE_STYLES } from '../styles/outline.css'
 
-const linkTypography = getTypographyProperties(`textLg`)
+const linkTypography = getTypographyProperties(`navItem`)
 
 const NAV_ITEM_BASE_STYLES = style({
   '@layer': {
     [LAYERS.base]: {
       ...linkTypography,
       padding: `${getSpaceValue(`s8`)} ${getSpaceValue(`s16`)}`,
+      position: `relative`,
 
       // outline related styles
       transition: `all ${getDurationValue(`superFast`)}`,
       borderRadius: getRadiusValue(`r2`),
-      position: `relative`,
 
       '::after': {
         content: ``,

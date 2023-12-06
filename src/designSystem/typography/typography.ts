@@ -156,6 +156,13 @@ const TYPOGRAPHY_VALUES = {
     fontWeight: getFontWeightValue(`boldSemi`),
   },
 
+  navItem: {
+    fontSize: getFontSizeValue(`sp1`),
+    fontSizeMobile: getFontSizeValue(`sp1`, { isMobile: true }),
+    lineHeight: getLineHeightValue(`lh140`),
+    fontWeight: getFontWeightValue(`medium`),
+  },
+
   textXs: {
     fontSize: getFontSizeValue(`sm2`),
     fontSizeMobile: getFontSizeValue(`sm2`, { isMobile: true }),

@@ -19,9 +19,17 @@ export const HOME_PAGE_STYLES = {
     gap: getSpaceValue(`s32`),
     alignItems: `center`,
     gridTemplateColumns: `1fr auto`,
+    marginTop: `10vh`,
 
     '@media': {
+      // on shorter screens, try to prevent the unnecessary scroll
+      [`(max-height: 1000px)`]: {
+        marginTop: `0px`,
+      },
+
+      // on tablet and smaller, stack the content vertically
       [`(max-width: ${COLUMN_BREAKPOINT})`]: {
+        marginTop: getSpaceValue(`s24`),
         gridTemplateColumns: `1fr`,
       },
     },
