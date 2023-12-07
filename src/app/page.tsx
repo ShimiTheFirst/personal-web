@@ -50,7 +50,12 @@ const Home: React.FC = () => {
           </div>
         </div>
 
-        <Image priority src={developer} alt={`A sticker of a dev`} />
+        <Image
+          priority
+          src={developer}
+          alt={`A sticker of a dev`}
+          className={HOME_PAGE_STYLES.image}
+        />
       </div>
     </ScreenContent>
   )

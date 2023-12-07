@@ -1,6 +1,7 @@
 const DROP_SHADOWS = {
   none: `unset`,
   sharp: `1px 1px 0px rgba(0, 0, 0, 0.7)`,
+  large: `9px 9px 5px hsl(310deg 41% 6% / 0.7)`,
 } as const
 
 /**

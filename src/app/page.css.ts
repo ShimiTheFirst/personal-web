@@ -83,4 +83,8 @@ export const HOME_PAGE_STYLES = {
     height: ICON_SIZE,
     filter: `drop-shadow(${getDropShadowValue(`sharp`)})`,
   }),
+
+  image: style({
+    filter: `drop-shadow(${getDropShadowValue(`large`)})`,
+  }),
 }
