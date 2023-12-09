@@ -14,8 +14,10 @@ const Home: React.FC = () => {
     <ScreenContent>
       <div className={HOME_PAGE_STYLES.content}>
         <div>
-          <h1 className={HOME_PAGE_STYLES.display}>Martin Štěpánek</h1>
-          <h2 className={HOME_PAGE_STYLES.subDisplay}>Frontend developer</h2>
+          <hgroup>
+            <h1 className={HOME_PAGE_STYLES.display}>Martin Štěpánek</h1>
+            <h2 className={HOME_PAGE_STYLES.subDisplay}>Frontend developer</h2>
+          </hgroup>
 
           <p className={HOME_PAGE_STYLES.body}>
             Hi, I’m an enthusiastic frontend developer from Czech Republic, who enjoys creating

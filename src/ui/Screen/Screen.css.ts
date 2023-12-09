@@ -8,6 +8,7 @@ export const SCREEN_STYLES = {
       [LAYERS.base]: {
         flexGrow: 1,
         margin: `0 auto`,
+        width: `100%`,
         maxWidth: MAX_CONTENT_WIDTH,
         padding: `0 ${getSpaceValue(`s32`)}`,
       },
