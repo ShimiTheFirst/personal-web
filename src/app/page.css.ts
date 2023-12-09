@@ -63,7 +63,7 @@ export const HOME_PAGE_STYLES = {
   body: style({
     ...bodyTypography,
     margin: `0px`,
-    marginBottom: getSpaceValue(`s36`),
+    marginBottom: getSpaceValue(`s44`),
     ...UNSUPPORTED_PROPERTIES,
 
     '@media': {
