@@ -13,7 +13,6 @@ export type TTypographyProperties = {
   fontWeight?: number
   letterSpacing?: string
   lineHeight?: number
-  textTransform?: string
   textShadow?: string
 }
 
@@ -198,6 +197,7 @@ export type TTypography = keyof typeof TYPOGRAPHY_VALUES
 /**
  * returns typography related CSS props for provided key
  */
-export const getTypographyProperties = (typography: TTypography) => {
+export const getTypographyProperties = (typography: TTypography): TTypographyProperties => {
+  // explicit return type is needed because otherwise TS reduces it to just required properties of that type
   return TYPOGRAPHY_VALUES[typography]
 }

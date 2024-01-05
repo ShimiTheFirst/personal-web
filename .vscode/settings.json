@@ -10,8 +10,8 @@
   "typescript.preferences.importModuleSpecifierEnding": "minimal",
   "typescript.tsdk": "node_modules/typescript/lib",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.organizeImports": false
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
   },
   // https://github.com/daidodo/tsimportsorter
   "tsImportSorter.configuration.groupRules": ["macro$", {}, "^[-]", "^[.]"],
@@ -48,7 +48,7 @@
     "statusBarItem.remoteForeground": "#e7e7e7",
     "commandCenter.border": "#e7e7e799"
   },
-  "cSpell.words": ["nextjs"],
+  "cSpell.words": ["nextjs", "turborepo", "Zustand"],
   "conventionalCommits.autoCommit": false,
   "conventionalCommits.lineBreak": "\\n",
   "conventionalCommits.promptScopes": false

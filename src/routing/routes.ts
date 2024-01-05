@@ -9,4 +9,10 @@ export const ROUTES = {
   cv: {
     path: '/cv',
   },
+  opinions: {
+    path: '/opinions',
+  },
+  inspiration: {
+    path: '/inspiration',
+  },
 }

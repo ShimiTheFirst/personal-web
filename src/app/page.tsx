@@ -20,8 +20,9 @@ const Home: React.FC = () => {
           </hgroup>
 
           <p className={HOME_PAGE_STYLES.body}>
-            Hi, I’m an enthusiastic frontend developer from Czech Republic, who enjoys creating
-            meaningful things that make someones life a bit better – starting with people around me.
+            Hi, I’m an enthusiastic frontend developer from the Czech Republic who enjoys creating
+            meaningful things that make someone’s life a bit better – starting with people around
+            me.
           </p>
 
           <div className={HOME_PAGE_STYLES.buttonContainer}>
