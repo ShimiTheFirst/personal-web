@@ -1,5 +1,3 @@
-import { layer } from '-libs/vanilla-extract'
-
 // CSS layers are used to control the order in which styles are applied.
 // The problem was that when element got unmounted and mounted again,
 // the base component styles were applied with more specificity than the override styles
@@ -15,8 +13,13 @@ import { layer } from '-libs/vanilla-extract'
 // The `override` layer could be used for override styles passed as props,
 // but it’s not necessary as styles outside of any layer are applied last.
 
-const override = layer('override')
-const base = layer({ parent: override }, 'base')
-const defaults = layer({ parent: base }, 'defaults')
+// ! careful because `base` and `default` layers are already present in the browser
 
-export const LAYERS = { base, override, defaults } as const
+// using vanilla extract to generate css layers was breaking the next build
+// ? FIXME later
+
+const defaults = 'defaultsLayer'
+const base = 'baseLayer'
+const override = 'overrideLayer'
+
+export const LAYERS = { defaults, base, override } as const

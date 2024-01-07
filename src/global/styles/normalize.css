@@ -1,5 +1,12 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
+/** CUSTOM LAYERS
+ * define layers in an order in which they should be applied
+ * defaultsLayer < baseLayer < overrideLayer
+ * the names has to correspond with values in layers.css.ts file
+ */
+@layer defaultsLayer, baseLayer, overrideLayer;
+
 /* Document
    ========================================================================== */
 
