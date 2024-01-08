@@ -26,7 +26,7 @@ const Home: React.FC = () => {
           </p>
 
           <div className={HOME_PAGE_STYLES.buttonContainer}>
-            <ButtonLink href={APP_CONFIG.linkedinUrl} target={`_blank`}>
+            <ButtonLink href={APP_CONFIG.linkedInProfileUrl} target={`_blank`}>
               <Image
                 priority
                 src={linkedinLogo}
@@ -42,7 +42,7 @@ const Home: React.FC = () => {
                 className={HOME_PAGE_STYLES.icon}
               />
             </ButtonLink>
-            <ButtonLink href={APP_CONFIG.mailUrl}>
+            <ButtonLink href={`mailto:${APP_CONFIG.email}`}>
               <Image
                 priority
                 src={emailSign}

@@ -17,6 +17,10 @@ export const FOOTER_STYLES = {
         flexDirection: `column`,
         fontSize: bodyTypography.fontSizeMobile,
       },
+
+      [`print`]: {
+        display: `none`,
+      },
     },
   }),
 

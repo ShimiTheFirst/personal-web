@@ -62,6 +62,12 @@ export const NAVIGATION_STYLES = {
         display: `flex`,
         alignItems: `center`,
         gap: getSpaceValue(`s8`),
+
+        '@media': {
+          [`print`]: {
+            display: `none`,
+          },
+        },
       },
     },
   }),

@@ -48,7 +48,7 @@
     "statusBarItem.remoteForeground": "#e7e7e7",
     "commandCenter.border": "#e7e7e799"
   },
-  "cSpell.words": ["nextjs", "turborepo", "Zustand"],
+  "cSpell.words": ["nextjs", "turborepo", "YOUTRACK", "Zustand"],
   "conventionalCommits.autoCommit": false,
   "conventionalCommits.lineBreak": "\\n",
   "conventionalCommits.promptScopes": false

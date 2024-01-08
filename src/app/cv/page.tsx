@@ -6,7 +6,7 @@ import { ScreenContent } from '-ui/Screen'
 import { Skill } from '-ui/Skill'
 
 import download from '../../../public/images/download.png'
-import { TECH_SKILLS } from './data/techSkills'
+import { TECH_SKILLS_BY_CATEGORY } from './data/techSkills'
 import { CV_PAGE_STYLES } from './page.css'
 
 const CV: React.FC = () => {
@@ -27,7 +27,7 @@ const CV: React.FC = () => {
 
       <h3 className={CV_PAGE_STYLES.h3}>Technology</h3>
 
-      {TECH_SKILLS.map((category) => (
+      {TECH_SKILLS_BY_CATEGORY.map((category) => (
         <React.Fragment key={category.title}>
           <h4 className={CV_PAGE_STYLES.h4}>{category.title}</h4>
 

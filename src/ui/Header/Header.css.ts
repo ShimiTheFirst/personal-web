@@ -38,6 +38,13 @@ export const HEADER_STYLES = {
         display: `flex`,
         alignItems: `center`,
         padding: `0 ${getSpaceValue(`s32`)}`,
+
+        '@media': {
+          [`print`]: {
+            minHeight: `0px`,
+            padding: `0`,
+          },
+        },
       },
     },
   }),
