@@ -10,7 +10,7 @@ const bodyTypography = getTypographyProperties(`textLg`)
 
 // new CSS properties that are not supported by vanilla-extract
 const UNSUPPORTED_PROPERTIES = {
-  textWrap: `balance`,
+  textWrap: `pretty`,
 }
 
 export const HOME_PAGE_STYLES = {

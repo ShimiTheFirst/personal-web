@@ -29,8 +29,6 @@ const RootLayout: React.FC<TProps> = ({ children }) => {
           <Header>
             <Navigation className={ROOT_LAYOUT_STYLES.nav}>
               <NavItem to={`home`}>HOME</NavItem>
-              <NavItem to={`opinions`}>OPINIONS</NavItem>
-              <NavItem to={`inspiration`}>INSPIRATION</NavItem>
               <NavItem to={`cv`}>CV</NavItem>
             </Navigation>
           </Header>
