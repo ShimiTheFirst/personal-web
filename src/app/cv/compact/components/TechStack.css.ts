@@ -25,6 +25,12 @@ export const CV_TECH_STACK_STYLES = {
       '& + &': {
         marginTop: getSpaceValue(`s8`),
       },
+      // put some space between the first line and the title
+      // because all other section start with a text that has some lin height
+      // and this is full of icons so it looks like the space is smaller
+      '&:first-of-type': {
+        marginTop: getSpaceValue(`s8`),
+      },
     },
   }),
 

@@ -96,19 +96,20 @@ const CVCompact: React.FC = () => {
 
         <Section title={`Profil vývojáře`}>
           <CVText>
-            Většina mých zkušeností je z jednoho malého týmu. To také znamená, že umím pracovat jak
-            samostatně, tak i vrámci kolektivu. Pracoval jsem spíše na dlouhodobě udržovaných
-            dynamických webových a mobilních aplikacích.
-          </CVText>
-          <CVText>
             Moje priority jsou robustnost, udržitelnost a čitelnost kódu. Neřídím se striktně DRY
             principem, spíše se snažím mít <em>single source of truth</em>. A rád píši komentáře,
             protože je to podle mě nejudržitelnější forma dokumentace.
           </CVText>
           <CVText>
-            Kromě samotného vývoje jsem často sestavoval zadání nejen sobě, ale i dalším členům
-            týmu, koordinoval vývoj a snažil se mít přesah do produktu. Také jsem někdy připravoval
-            UX/UI návrhy, i když ty byly v mém podání vždy spíše praktické než kreativní.
+            Většina mých zkušeností je z jednoho malého týmu. To také znamená, že umím pracovat jak
+            samostatně, tak v rámci kolektivu. Pracoval jsem spíše na dlouhodobě udržovaných
+            dynamických webových a mobilních aplikacích.
+          </CVText>
+          <CVText>
+            Kromě samotného vývoje jsem často sestavoval zadání pro sebe i ostatní, mentoroval
+            juniornější členy týmu, koordinoval vývoj a snažil se mít přesah do produktu. Také jsem
+            někdy připravoval UX/UI návrhy, i když ty byly v mém podání vždy spíše praktické než
+            kreativní.
           </CVText>
         </Section>
 
@@ -168,7 +169,7 @@ const CVCompact: React.FC = () => {
                 produktu a vývoje, Návrh FE architektury, zlepšování DX.
               </CVText>
               <CVText>
-                Zaměřením fimy byla podpora restauračních podniků. Pracoval jsem na administračních
+                Zaměřením firmy byla podpora restauračních podniků. Pracoval jsem na administračních
                 aplikacích pro klienty, objednávacích aplikacích pro zákazníky klientů i interních
                 aplikacích usnadňujících procesy firmy.
               </CVText>
@@ -203,7 +204,7 @@ const CVCompact: React.FC = () => {
       <footer className={STYLES.footer}>
         <FooterItem
           image={qrCv}
-          label={`Další informace`}
+          label={`Více informací`}
           imageDescription={`QR code with link to more detailed CV`}
           link={APP_CONFIG.cvUrl}
         />

@@ -33,7 +33,7 @@ export const CV_COMPACT_PAGE_STYLES = {
 
     display: `flex`,
     flexDirection: `column`,
-    gap: getSpaceValue(`s32`),
+    gap: getSpaceValue(`s24`),
 
     [`@media`]: {
       [`print`]: {
@@ -105,12 +105,12 @@ export const CV_COMPACT_PAGE_STYLES = {
     display: `grid`,
     gridTemplateColumns: `1fr 1fr`,
     gridTemplateRows: `auto auto auto 1fr`,
-    rowGap: getSpaceValue(`s32`),
-    columnGap: getSpaceValue(`s24`),
+    gap: getSpaceValue(`s24`),
   }),
 
   summary: style({
     gridColumn: `1 / -1`,
+    margin: `${getSpaceValue(`s8`)} 0`,
 
     display: `flex`,
     alignItems: `center`,
