@@ -48,7 +48,7 @@ const TYPESCRIPT: TSkill = {
   progress: 5,
   icon: typescript,
   iconDescription: `TypeScript logo`,
-  description: `using proper TS (not many <i>any</i>s to be found) and swapping to JS only in rare occasions (eg. some small utility CLI tools)`,
+  description: `using proper TS (not many anys to be found) and swapping to JS only in rare occasions (eg. some small utility CLI tools)`,
 }
 
 const GRAPHQL: TSkill = {

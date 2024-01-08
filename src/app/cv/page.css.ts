@@ -1,10 +1,16 @@
-import { getSpaceValue, getTypographyProperties } from '-designSystem'
+import {
+  getFontWeightValue,
+  getRadiusValue,
+  getSpaceValue,
+  getTypographyProperties,
+} from '-designSystem'
 import { style } from '-libs/vanilla-extract'
 
 const heading1Typography = getTypographyProperties(`title1`)
 const heading2Typography = getTypographyProperties(`title2`)
 const heading3Typography = getTypographyProperties(`title3`)
 const heading4Typography = getTypographyProperties(`title4`)
+const messageMdTypography = getTypographyProperties(`messageMd`)
 
 const ICON_SIZE = `24px`
 
@@ -46,6 +52,23 @@ export const CV_PAGE_STYLES = {
   downloadIcon: style({
     width: ICON_SIZE,
     height: ICON_SIZE,
+  }),
+
+  highlight: style({
+    borderWidth: `3px`,
+    borderStyle: `solid`,
+    borderRadius: getRadiusValue(`r4`),
+    padding: getSpaceValue(`s12`),
+    width: `fit-content`,
+    background: COLORS.dark,
+
+    ...messageMdTypography,
+    fontWeight: getFontWeightValue(`boldSemi`),
+
+    borderLeftColor: COLORS.borderLight,
+    borderTopColor: COLORS.borderLight,
+    borderRightColor: COLORS.borderDark,
+    borderBottomColor: COLORS.borderDark,
   }),
 
   skillsGrid: style({
