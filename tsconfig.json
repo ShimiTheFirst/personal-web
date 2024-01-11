@@ -15,6 +15,7 @@
     "incremental": true,
     "plugins": [{ "name": "next" }],
     "paths": {
+      "-components/*": ["./src/components/*"],
       "-config/*": ["./src/config/*"],
       "-designSystem": ["./src/designSystem/index.ts"],
       "-libs/*": ["./src/libs/*"],
